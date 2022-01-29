@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Tenor+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+}
+a {
+  color: #144267;
+  text-decoration: none;
+}
+.landing-page {
+  width: 100%;
+}
+.first-section {
+  background-color: #144267;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+.first-section img {
+  width: 60%;
+}
+.first-section h1 {
+  margin: 20px auto;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.first-section p {
+  margin-bottom: 30px;
+  font-size: 1.5rem;
+}
+.first-section a {
+  color: #144267;
+  background-color: #f0e3d1;
+  padding: 15px 5px 20px;
+  display: block;
+  font-size: 1.5rem;
+  width: 250px;
+  margin: auto;
+  font-weight: 500;
+}
+.landing-page .arrow {
+  width: 0;
+  height: 0;
+  margin: auto;
+  border-left: 40px solid transparent;
+  border-right: 40px solid transparent;
+  border-top: 30px solid #144267;
+}
+.second-section {
+  padding: 40px 10px;
+}
+.second-section h2 {
+  margin: 20px auto;
+  font-weight: 400;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #144267;
+  text-align: center;
+}
+.second-section .book {
+  position: relative;
+  padding: 30px 0 40px;
+  text-align: center;
+  margin-left: 20px;
+}
+.second-section .book img:first-of-type {
+  width: 100%;
+  padding-right: 30px;
+}
+.second-section .book img:last-of-type {
+  width: 70%;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+}
+.second-section .span-color {
+  color: #144267;
+  font-weight: 500;
+}
+.second-section .list {
+  padding: 10px 20px;
+}
+.second-section .list .item {
+  padding: 5px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.second-section .list .item p {
+  margin-left: 5px;
+}
+.second-section .disk {
+  display: inline;
+}
+.second-section .disk::before {
+  content: "O";
+  color: #f0e3d1;
+  font-size: 15px;
+  font-weight: bold;
+}
+.second-section a {
+  padding: 20px 20px 25px;
+  display: block;
+  font-size: 1.5rem;
+  width: 270px;
+  margin: 30px auto;
+  font-weight: 500;
+  font-family: "Barlow", sans-serif;
+  border: 1px solid #144267;
+  text-align: center;
+}
+.second-section a:hover {
+  color: white;
+  background-color: #144267;
+}
+footer {
+  background-image: linear-gradient(
+      rgba(242, 239, 236, 0.75),
+      rgba(242, 239, 236, 0.75)
+    ),
+    url("../img/footerbackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px 30px;
+  text-align: left;
+  font-weight: 400;
+  color: gray;
+}
+footer img {
+  width: 30%;
+  margin-bottom: 20px;
+}
+footer p {
+  color: #144267;
+}
+@media (min-width: 576px) {
+  .second-section .book {
+    left: 50px;
+  }
+}
+@media (min-width: 768px) {
+  .first-section img {
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  .first-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 30px;
+  }
+  .first-section a {
+    margin-bottom: 40px;
+  }
+  footer img {
+    width: 8%;
+    margin-right: 20px;
+  }
+  .second-section .book img:first-of-type {
+    width: 80%;
+  }
+  .second-section .book img:last-of-type {
+    width: 50%;
+    position: absolute;
+    top: 8%;
+    left: 20%;
+  }
+  .second-section .content {
+    padding: 0 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .first-section img {
+    width: 15%;
+    margin-bottom: 20px;
+  }
+  .second-section .content {
+    display: flex;
+    align-content: flex-start;
+    justify-content: space-between;
+    padding: 30px 80px 30px 10px;
+    margin: auto;
+  }
+  .second-section .content .book {
+    padding: 0px;
+    max-width: 50%;
+  }
+  .second-section .content .list {
+    margin-top: 3%;
+    text-align: left;
+    max-width: 50%;
+    font-size: 1.2rem;
+    padding: 0px 50px;
+    line-height: 30px;
+  }
+  .second-section .list .item p {
+    margin-left: 27px;
+  }
+  .second-section .content .book img:first-of-type {
+    width: 70%;
+  }
+  .second-section .content .book img:last-of-type {
+    width: 43%;
+    left: 40%;
+    top: 10%;
+  }
+  footer {
+    display: flex;
+    align-items: center;
+  }
+  footer img {
+    width: 8%;
+    margin-right: 20px;
+  }
+}

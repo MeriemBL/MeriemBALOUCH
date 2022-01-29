@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.landing-page {
+  max-width: 100%;
+  background-image: url("../img/landingpagebackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.landing-page .landing-content {
+  text-align: left;
+  padding: 25% 0 20% 30%;
+}
+.landing-page .landing-content h3 {
+  font-family: lobster, serif;
+  font-size: 1.3rem;
+  color: #367870;
+}
+.landing-page .landing-content h1 {
+  color: #424242;
+  text-align: left;
+  padding-top: 20px;
+  padding-right: 30px;
+  font-size: 2.3rem;
+}
+.landing-page .landing-content p {
+  font-family: sans-serif;
+  padding: 15px 30px 0 0;
+  font-size: 1rem;
+  color: black;
+}
+.landing-page .landing-content input {
+  padding: 15px;
+  background-color: white;
+  display: block;
+  border: hidden;
+  margin: 20px 0;
+  width: 240px;
+}
+::placeholder {
+  font-size: 1.1rem;
+}
+.landing-page .landing-content button {
+  background-color: #be2629;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  display: block;
+  width: 240px;
+  padding: 20px;
+  border: hidden;
+  cursor: pointer;
+}
+footer {
+  background-color: #367870;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: sans-serif;
+  font-size: 1.1rem;
+}
+@media (min-width: 992px) {
+  .landing-page .landing-content {
+    padding: 10% 0 10% 50%;
+  }
+  .landing-page .landing-content h3 {
+    font-size: 1.5rem;
+  }
+  .landing-page .landing-content h1 {
+    font-size: 3rem;
+  }
+  .landing-page .landing-content input,
+  .landing-page .landing-content button {
+    width: 300px;
+  }
+}
